@@ -30,6 +30,11 @@
         <jjwt>0.9.1</jjwt>
         <jaxb-api>2.3.1</jaxb-api>
         <poi>3.16</poi>
+        <httpclient>4.5.13</httpclient>
+        <spring-boot-starter-cache>2.7.3</spring-boot-starter-cache>
+        <spring-boot-starter-websocket>2.7.3</spring-boot-starter-websocket>
+        <poi>3.16</poi>
+        <poi-ooxml>3.16</poi-ooxml>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -122,6 +127,36 @@
                 <artifactId>wechatpay-apache-httpclient</artifactId>
                 <version>0.4.8</version>
             </dependency>
+            <!--Httpclient-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient}</version>
+            </dependency>
+            <!--Cache-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-cache</artifactId>
+                <version>${spring-boot-starter-cache}</version>
+            </dependency>
+            <!--WebSocket-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+                <version>${spring-boot-starter-websocket}</version>
+            </dependency>
+            <!--Apache POI-->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi-ooxml}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
